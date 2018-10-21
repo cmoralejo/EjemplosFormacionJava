@@ -1,18 +1,18 @@
 /**
  * 
  */
-package es.cmr.util.colections.nodes;
+package es.cmr.util.collections;
 
 /**
  * <p>Concrete subclass of Node&lt;T&gt; that implements references to next and previous nodes (onwards Reversible node).
  * 
  * @author Carlos Moralejo Romo 
  *
- * @see es.cmr.util.colections.nodes.Node
+ * @see es.cmr.util.collections.Node
  * 
  * @param <T> the type of object that may be stored       
  */
-public class NodeReversible<T> extends NodeOneWay<T> {
+final public class NodeReversible<T> extends NodeOneWay<T> {
 	/**
 	 * References to the previous node (or null if doesn't exist)
 	 */
@@ -23,8 +23,8 @@ public class NodeReversible<T> extends NodeOneWay<T> {
 	 * 
 	 * @param data any object that matches type T 
 	 */
-	NodeReversible(T dato) {
-		super(dato);
+	protected NodeReversible(T data) {
+		super(data);
 		this.previous = null;
 	}
 

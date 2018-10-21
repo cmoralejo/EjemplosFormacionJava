@@ -1,7 +1,7 @@
 /**
  * 
  */
-package es.cmr.util.colections.nodes;
+package es.cmr.util.collections;
 
 /**
  * <p>This class provides a container (onwards Node) that stores an object (any extends object's class) and references others previous or next nodes
@@ -22,7 +22,7 @@ public abstract class Node<T> {
 	 * 
 	 * @return the object stored in the node 
 	 */
-	public T getData() {
+	protected T getData() {
 		return data;
 	}
 
@@ -31,28 +31,28 @@ public abstract class Node<T> {
 	 * 
 	 * @return the next node or null if doesn't exist 
 	 */
-	protected abstract Node<T> getNext();
+	abstract protected Node<T> getNext();
 
 	/**
 	 * Replaces the reference to the next node
 	 * 
 	 * @param next any object that matches type Node&lt;T&gt;
 	 */
-	protected abstract void setNext(Node<T> next);
+	abstract protected void setNext(Node<T> next);
 
 	/**
 	 * Returns the reference to the previous node 
 	 * 
 	 * @return the previous node or null if doesn't exist 
 	 */
-	protected abstract Node<T> getPrevious();
+	abstract protected Node<T> getPrevious();
 
 	/**
 	 * Replaces the reference to the next node
 	 * 
 	 * @param previous any object that matches type Node&lt;T&gt;
 	 */
-	protected abstract void setPrevious(Node<T> previous);
+	abstract protected void setPrevious(Node<T> previous);
 		
 	/** 
 	 * Creates a String representation of the node.

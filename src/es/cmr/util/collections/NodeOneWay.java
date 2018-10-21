@@ -1,7 +1,7 @@
 /**
  * 
  */
-package es.cmr.util.colections.nodes;
+package es.cmr.util.collections;
 
 
 /**
@@ -10,7 +10,7 @@ package es.cmr.util.colections.nodes;
  * 
  * @author Carlos Moralejo Romo 
  *
- * @see es.cmr.util.colections.nodes.Node
+ * @see es.cmr.util.collections.Node
  * 
  * @param <T> the type of object that may be stored       
  */
@@ -25,7 +25,7 @@ public class NodeOneWay<T> extends Node<T>  {
 	 * 
 	 * @param data any object that matches type T 
 	 */
-	NodeOneWay(T data) {
+	protected NodeOneWay(T data) {
 		super.data = data;
 		this.next = null;
 	}
