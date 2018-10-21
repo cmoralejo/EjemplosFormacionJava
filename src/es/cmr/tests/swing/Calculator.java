@@ -1,10 +1,10 @@
-package es.cmr.swing;
+package es.cmr.tests.swing;
 
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class Calculadora extends JFrame {
+public class Calculator extends JFrame {
 
 	private JTextField displayField;
 	private JPanel windowContent;
@@ -34,7 +34,7 @@ public class Calculadora extends JFrame {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new Calculadora();
+		new Calculator();
 
 	}
 
@@ -47,7 +47,7 @@ public class Calculadora extends JFrame {
 	}
 	
 	
-	public Calculadora() {
+	public Calculator() {
 		// TODO Auto-generated constructor stub
 
 		windowContent = new JPanel();
