@@ -1,6 +1,3 @@
-/**
- * 
- */
 package es.cmr.util.collections;
 
 /**
