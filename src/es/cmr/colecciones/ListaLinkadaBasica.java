@@ -10,9 +10,9 @@ import java.util.Iterator;
  *
  */
 public class ListaLinkadaBasica<T> implements Iterable<T>{
-	Elemento inicio=null;
-	Elemento fin=null;	
-	Elemento actual=null;
+	ElementoBasico<T> inicio=null;
+	ElementoBasico<T> fin=null;	
+	ElementoBasico<T> actual=null;
 	
 	ListaLinkadaBasica(T[] elementos) {
 		for (int i=0; i < elementos.length;i++) {
@@ -21,7 +21,7 @@ public class ListaLinkadaBasica<T> implements Iterable<T>{
 	}
 	
 	public void addElemento(T elemento) {
-		Elemento nuevo = new Elemento(elemento);
+		ElementoBasico<T> nuevo = new ElementoBasico<>(elemento);
 		if (fin==null) {
 			inicio=fin=actual=nuevo;
 		}
@@ -31,12 +31,12 @@ public class ListaLinkadaBasica<T> implements Iterable<T>{
 		}
 	}
 
-	private T getPrimerElemento() {
+	protected T getPrimerElemento() {
 		actual=inicio;
 		return(actual!=null? actual.getDato():null); 
 	}
 	
-	private T getSiguienteElemento() {
+	protected T getSiguienteElemento() {
 		if (haySiguienteElemento()) {
 			actual=actual.getSiguiente();
 			return(actual.getDato());
@@ -51,37 +51,6 @@ public class ListaLinkadaBasica<T> implements Iterable<T>{
 		return (actual.getSiguiente()!=null);
 	}
 	
-	private class Elemento {
-		private T dato;
-		private Elemento siguiente;
-
-		Elemento(T dato) {
-			this.dato = dato;
-			this.siguiente = null;
-		}
-
-		Elemento getSiguiente() {
-			return siguiente;
-		}
-
-		void setSiguiente(Elemento siguiente) {
-			this.siguiente = siguiente;
-		}
-		
-		T getDato() {
-			return dato;
-		}
-
-		void setDato(T dato) {
-			this.dato = dato;
-		}
-		
-		@Override
-		public String toString() {
-			return "Elemento: " + dato;
-		}
-		
-	}
 
 	@Override
 	public Iterator<T> iterator() {
