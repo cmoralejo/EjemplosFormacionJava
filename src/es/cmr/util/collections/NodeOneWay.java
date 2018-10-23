@@ -48,11 +48,11 @@ public class NodeOneWay<T> extends Node<T>  {
 	}
 
 	/**
-	 * Returns the reference to the previous node.It's not supported.
+	 * Returns the reference to the previous node.It&apos;s not supported.
 	 * 
 	 * @return the previous node or null if does not exist
 	 * 
-	 * @throws UnsupportedOperationException It's not supported.
+	 * @throws UnsupportedOperationException It&apos;s not supported.
 	 */
 	@Override
 	protected Node<T> getPrevious() {
@@ -60,11 +60,11 @@ public class NodeOneWay<T> extends Node<T>  {
 	}
 
 	/**
-	 * Replaces the reference to the previous node.It's not supported.
+	 * Replaces the reference to the previous node.It&apos;s not supported.
 	 * 
 	 * @param previous any object that matches type Node&lt;T&gt;
 	 * 
-	 * @throws UnsupportedOperationException It's not supported.
+	 * @throws UnsupportedOperationException It&apos;s not supported.
 	 */
 	@Override	
 	protected void setPrevious(Node<T> previous) {

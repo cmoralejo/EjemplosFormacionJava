@@ -2,7 +2,7 @@ package es.cmr.util.collections;
 
 /**
  * <p>This class provides a container (onwards Node) that stores an object (any extends object's class) and references others previous or next nodes
- * <p>It's abstract to define but not implement references to other previous or next node
+ * <p>It&apos;s abstract to define but not implement references to other previous or next node
  * 
  * @author Carlos Moralejo Romo
  *  
