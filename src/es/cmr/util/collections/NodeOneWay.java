@@ -13,7 +13,7 @@ package es.cmr.util.collections;
  */
 public class NodeOneWay<T> extends Node<T>  {
 	/**
-	 * References to the next node (or null if doesn't exist)
+	 * References to the next node (or null if does not exist)
 	 */
 	protected Node<T> next;
 
@@ -30,7 +30,7 @@ public class NodeOneWay<T> extends Node<T>  {
 	/**
 	 * Returns the reference to the next node. 
 	 *  
-	 * @return the next node or null if doesn't exist 
+	 * @return the next node or null if does not exist 
 	 */
 	@Override
 	final protected Node<T> getNext() {
@@ -50,7 +50,7 @@ public class NodeOneWay<T> extends Node<T>  {
 	/**
 	 * Returns the reference to the previous node.It's not supported.
 	 * 
-	 * @return the previous node or null if doesn't exist
+	 * @return the previous node or null if does not exist
 	 * 
 	 * @throws UnsupportedOperationException It's not supported.
 	 */

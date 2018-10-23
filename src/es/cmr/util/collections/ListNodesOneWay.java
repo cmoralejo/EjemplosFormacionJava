@@ -49,7 +49,7 @@ public class ListNodesOneWay<T> implements Iterable<T>{
 	/**
 	 * Returns the reference to the first node. 
 	 *  
-	 * @return the first node or null if doesn't exist 
+	 * @return the first node or null if does not exist 
 	 */
 	final protected T getFirstNode() {
 		currentNode=startNode;
@@ -59,7 +59,7 @@ public class ListNodesOneWay<T> implements Iterable<T>{
 	/**
 	 * Returns the reference to the next node. 
 	 *  
-	 * @return the next node or null if doesn't exist 
+	 * @return the next node or null if does not exist 
 	 */
 	final protected T getNextNode() {
 		if (currentNode!=null && currentNode.getNext()!=null) {
@@ -94,14 +94,14 @@ public class ListNodesOneWay<T> implements Iterable<T>{
 				nextNode = getFirstNode();
 			}
 	
-			//Check if next node doesn't exists
+			//Check if next node does not exists
 			public boolean hasNext() {
 				return(nextNode!=null);
 			}
 			
 			/*
 			 * Returns the next node (the attribute next of the actual node)
-			 * If next node exists doesn't exists throws NoSuchElementException  
+			 * If next node exists does not exists throws NoSuchElementException  
 			 */
 			public T next() {
 				T node = nextNode;

@@ -2,7 +2,7 @@ package es.cmr.util.collections;
 
 /**
  * <p>This class provides a container (onwards Node) that stores an object (any extends object's class) and references others previous or next nodes
- * <p>It´s abstract to define but not implement references to other previous or next node
+ * <p>It's abstract to define but not implement references to other previous or next node
  * 
  * @author Carlos Moralejo Romo
  *  
@@ -26,7 +26,7 @@ public abstract class Node<T> {
 	/**
 	 * Returns the reference to the next node 
 	 * 
-	 * @return the next node or null if doesn't exist 
+	 * @return the next node or null if does not exist 
 	 */
 	abstract protected Node<T> getNext();
 
@@ -40,7 +40,7 @@ public abstract class Node<T> {
 	/**
 	 * Returns the reference to the previous node 
 	 * 
-	 * @return the previous node or null if doesn't exist 
+	 * @return the previous node or null if does not exist 
 	 */
 	abstract protected Node<T> getPrevious();
 

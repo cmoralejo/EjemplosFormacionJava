@@ -11,7 +11,7 @@ package es.cmr.util.collections;
  */
 final public class NodeReversible<T> extends NodeOneWay<T> {
 	/**
-	 * References to the previous node (or null if doesn't exist)
+	 * References to the previous node (or null if does not exist)
 	 */
 	protected Node<T> previous;
 
@@ -28,7 +28,7 @@ final public class NodeReversible<T> extends NodeOneWay<T> {
 	/**
 	 * Returns the reference to the previous node.
 	 * 
-	 * @return the previous node or null if doesn't exist
+	 * @return the previous node or null if does not exist
 	 */
 	@Override
 	final protected Node<T> getPrevious() {
